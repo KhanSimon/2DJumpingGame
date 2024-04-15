@@ -3,14 +3,14 @@ import { preload } from './scenes/preload.js';
 import { create } from './scenes/create.js';
 import { update } from './scenes/update.js';
 
-
-
+var w = 400;
+var h = 800;
 
 
 var config = {
     type: Phaser.AUTO,
-    width: 400,
-    height: 800,
+    width: w,
+    height: h,
     physics: {
         default: 'arcade',
         arcade: {
@@ -31,4 +31,7 @@ var cursors;
 var background;
 var obstacles;
 var platformsStat;
+var score ;
+
+
 

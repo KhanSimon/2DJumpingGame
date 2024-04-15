@@ -1,7 +1,7 @@
 export function update ()
 {
 //this.cameras.main.scrollY = this.player.y - this.cameras.main.height / 2;
-//this.physics.world.wrap(this.player, 0, true, false, false);
+this.physics.world.wrap(this.player, 0, true, false, false);
 this.background.tilePositionY -= 3 ;
 
 if (this.cursors.left.isDown && (! this.player.body.touching.down))
@@ -43,4 +43,6 @@ if (this.player.body.touching.down)
 {
     this.player.anims.play('static');
 }
+
+
 }
