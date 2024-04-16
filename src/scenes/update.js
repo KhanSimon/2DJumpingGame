@@ -1,8 +1,10 @@
 export function update ()
 {
-//this.cameras.main.scrollY = this.player.y - this.cameras.main.height / 2;
 this.physics.world.wrap(this.player, 0, true, false, false);
-this.background.tilePositionY -= 3 ;
+this.background.tilePositionY -= 1 ;
+this.nebulates.tilePositionY -= 3;
+this.planets.tilePositionY -= 3;
+
 
 if (this.cursors.left.isDown && (! this.player.body.touching.down))
 {
@@ -45,4 +47,6 @@ if (this.player.body.touching.down)
 }
 
 
+
 }
+

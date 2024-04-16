@@ -3,9 +3,10 @@ import { preload } from './scenes/preload.js';
 import { create } from './scenes/create.js';
 import { update } from './scenes/update.js';
 
+
+
 var w = 400;
 var h = 800;
-
 
 var config = {
     type: Phaser.AUTO,
@@ -24,14 +25,9 @@ var config = {
         update: update
     }
 };
-var game = new Phaser.Game(config);
+new Phaser.Game(config);
 
-var player;
-var cursors;
-var background;
-var obstacles;
-var platformsStat;
-var score ;
+
 
 
 
